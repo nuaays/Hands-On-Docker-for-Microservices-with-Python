@@ -19,7 +19,7 @@ spec:
             containers:
                 - name: users-backend-service
                   image: likeclem30/users_server:latest
-                  imagePullPolicy: Never
+                  imagePullPolicy: Always
                   ports:
                      - containerPort: 8000
                   env:
@@ -38,4 +38,4 @@ spec:
 
                 - name: users-backend-db
                   image: likeclem30/users_backend_db:latest
-                  imagePullPolicy: Never
+                  imagePullPolicy: Always

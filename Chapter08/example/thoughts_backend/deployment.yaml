@@ -19,7 +19,7 @@ spec:
             containers:
                 - name: thoughts-backend-service
                   image: likeclem30/thoughts_server:latest
-                  imagePullPolicy: Never
+                  imagePullPolicy: Always
                   ports:
                      - containerPort: 8000
                   env:
@@ -38,5 +38,5 @@ spec:
 
                 - name: thoughts-backend-db
                   image: likeclem30/thoughtsbackend_db:latest
-                  imagePullPolicy: Never
+                  imagePullPolicy: Always
 
